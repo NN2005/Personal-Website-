@@ -1,0 +1,5 @@
+# pnpm 10+ refuses to run dependency build scripts unless they are allow-listed.
+# esbuild ships a prebuilt platform binary and only needs its install script to
+# link that binary, so it is safe to approve. See https://pnpm.io/settings
+allowBuilds:
+  esbuild: true
